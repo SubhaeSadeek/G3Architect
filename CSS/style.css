@@ -22,8 +22,8 @@ color: #FFFFFF;
     top: 0px;
     background: rgba(255, 144, 14, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flexbox;
-    z-index: 99;
+    
+    
 }
 /* nav bar */
 .nav-bar{
@@ -55,11 +55,15 @@ color: #FFFFFF;
 ***************************/
 
 /* header description starts */
+.header-container {
+   width: 900px;
+   margin: 0px auto;
+}
 .header-description {
     text-align: center;
-    width: 400px;
-    height: 150px;
+    width: 700px;
     justify-content: center;
+    
    
 }
 .header-head1 {
@@ -68,32 +72,122 @@ color: #FFFFFF;
 
 .header-text {
 font-weight: 400;
-font-size: 16px;
+font-size: 26px;
 line-height: 26px;
 color: #727272;
 }
 
 .header-image img{
- width: 350px;
+ width: 850px;
  height: auto;
+ margin: 50px auto;
 }
 
 /**************************
        main content start
 ***************************/
+.features-container {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+.experience-badges {
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    left: 540px;
+    top: 2466px;
+    background: #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.boxed-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #69852a;
+    background-color: antiquewhite;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    left: 300px;
+    border-radius: 6px;
+    box-shadow: 0 8px 6px -6px #726b65;
+    
+    
+}
+.features-boxes {
+    width: 400px;
+    height: auto;
+    display: grid;
+    grid-auto-flow: row;
+   
+}
+
+.features-description {
+    width: 400px;
+    height: auto;
+    border: 20px 0px;
+    text-align: center;
+    font-weight: 500;
+    color: #1f1e1d;
+    background-color: rgb(221, 205, 183);
+    margin-bottom: 5px;
+    box-shadow: 0 8px 6px -6px #726b65;
+}
+.teams-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    background-color: #bedaf1;
+    justify-items: first baseline;
+} 
 .teams {
     
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    background-color: #2196F3;
     padding: 2px;
-    margin-top: 200px;
+    width: auto;
+    height: 700px;
 }
-.null {
-    width: 100px;
-    width: 100px;
+.teams-description {
+    width: auto;
+    height: 700px;
+    justify-items: first baseline;
+    
+    
 }
+.teams-heading {
+    position: absolute;
+    width: 250px;
+    height: 106px;
+    left: 900px;
+    top: 1200px;
+    
+}
+
+#gray{
+    color: #727272;
+    font-weight: 700;
+    font-size: 24px;
+}
+#orange {
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 24px; 
+}
+
+.someFacts-intro {
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 400;
+    color: #24211f;
+}
+
 @keyframes somefact {
     0%   {background-color:rgb(226, 183, 183); left:0px; top:0px;}
     25%  {background-color:rgb(161, 161, 78); left:25px; top:0px;}
@@ -102,17 +196,15 @@ color: #727272;
     100% {background-color:rgb(202, 114, 114); left:0px; top:0px;}
 }
 
-    .some-facts {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    left: 50px;
-    right: auto;
-    font-weight: 500;
-    font-size: 22px;
-    margin-top: 200px;
-    
+.some-facts {
+display: flex;
+justify-content: space-between;
+text-align: center;
+align-items: center;
+left: 50px;
+right: auto;
+font-weight: 500;
+font-size: 22px; 
 }
 .facts-acheivements img{
     width: 25%;
@@ -138,7 +230,13 @@ color: #727272;
 /* sponsors section */
 
 .sponsors-description{
+    width: 250px;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0px auto;
     text-align: center;
+    font-weight: 400;
+    color: #272421;
 
 }
 .sponsors-groups {
@@ -157,9 +255,10 @@ color: #727272;
 
 .footer {
     margin-top: 100px;
-    background: rgba(12, 145, 78, 0.1);
+    background: rgba(199, 202, 8, 0.5);
     box-shadow: 0px 4px 4px rgba(185, 103, 103, 0.25);
     border-radius: 4px;
     text-align: center;
     height: 50px;
+    padding-top: 20px;
 }
